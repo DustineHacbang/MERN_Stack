@@ -21,14 +21,14 @@ class Display extends Component{
         // console.log(age.state.age)
     }
     render(){
-        
+        var {lastName,firstName,hairColor} = this.props
         
         return(
             <div> 
-            <h1>Name: {this.props.lastName}, {this.props.firstName}</h1>
+            <h1>Name: {lastName}, {firstName}</h1>
             <h2>Age: {this.state.ageNum}</h2>
-            <h3>Hair Color: {this.props.hairColor}</h3>
-            <button onClick = {this.clickHandler} >Birthday Button For {this.props.firstName} {this.props.lastName}</button>
+            <h3>Hair Color: {hairColor}</h3>
+            <button onClick = {this.clickHandler} >Birthday Button For {firstName} {lastName}</button>
             </div>
             
         )
