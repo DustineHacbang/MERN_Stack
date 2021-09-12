@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const Main = () => {
 
-    const[pokemon,setState] = useState([])
+    const[pokemon,setPoke] = useState([])
 
     // const swAPI =() => {
     //     fetch("https://pokeapi.co/api/v2/pokemon")
@@ -14,7 +14,7 @@ const Main = () => {
 
     const axiosCall=(e)=>{
         axios.get("https://pokeapi.co/api/v2/pokemon?limit=807")
-            .then(response => setState(response.data.results)) 
+            .then(response => setPoke(response.data.results)) 
             .catch(error => console.log(error))
     }
 
