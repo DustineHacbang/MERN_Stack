@@ -1,5 +1,5 @@
 const { create } = require("../models/joke.models")
-const Jokes = require("../models/joke.models")
+const Joke = require("../models/joke.models")
 
 
 module.exports.test = (req,res) => {
