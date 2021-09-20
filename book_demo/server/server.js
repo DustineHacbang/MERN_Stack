@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true }))
 ////3.attach routes to your express server
 
 
-const bookRoutes = require("./routes/books.routes")
+const bookRoutes = require("./routes/book.routes")
 bookRoutes(app)
 
 ////4.run express server

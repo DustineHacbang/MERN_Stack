@@ -1,22 +1,19 @@
 const mongoose = require("mongoose")
 
 const BookSchema = mongoose.Schema({
+    title: {
+        type : String,
+        required: [true, "Title must be provided"]
+    },
+    pages : {
+        type : Number,
+        required: [true, "Pages must be required"],
+        min : [0, "You cannot have negative pages"]
+    },
+    author : {
+        type : String,
+        required : [true, "Author name must be provided"]
+    }
+}, {timestamps:true})
 
-        title:{
-            type:String,
-            require:[true, "title must be provided"]
-        
-        },
-        pages: {
-            type: Number,
-            min: [0,"You cannot have negative pages"]
-        },
-        auther:{
-            type:String,
-            require:[true,"Author name must be provided"]
-        }
-
-
-}, {timestamp:true})
-
-module.exports.Book = mongoose.model("Book",BookSchema)
+module.exports.Book =  mongoose.model("Book", BookSchema)

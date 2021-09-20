@@ -1,8 +1,9 @@
+
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb://localhost/book_demo",{
+mongoose.connect("mongodb://localhost/books_demo",{
     useNewUrlParser: true,
-    useUnifiedTopology:true,
+	useUnifiedTopology: true,
 })
-.then(()=> console.log( "connected to full mern demo db"))
-.catch(err => console.log("ERROR:", err))
+.then(()=> console.log("CONNECTED TO FULL MERN DEMO DB"))
+.catch(err => console.log("ERROR: ", err))
