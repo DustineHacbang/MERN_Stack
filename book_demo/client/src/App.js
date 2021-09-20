@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Create from "./views/Create";
+
 
 function App() {
+
+
+
   return (
-  <div>
-    <h1>hellow world</h1>
-  </div>
+
+    <div>
+      <Create/>
+    </div>
   );
 }
 
