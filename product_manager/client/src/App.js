@@ -21,17 +21,17 @@ function App() {
             <Dashbaord />
           </Route>
 
-          <Route exact path="/product/:id">
+          <Route exact path="/products/:id">
             <Details />
           </Route>
 
-          <Route exact path="/product/:id/edit">
+          <Route exact path="/products/:id/edit">
             <Update />
           </Route>
 
 
         </Switch>
-        
+
       </div>
     </BrowserRouter>
   );

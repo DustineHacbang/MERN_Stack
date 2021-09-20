@@ -35,7 +35,7 @@ module.exports.updateProduct = (req, res) => {
 // DELETE
 module.exports.deleteProduct = (req, res) => {
     const {id} = req.params
-    Book.deleteOne({_id: id})
+    Product.deleteOne({_id: id})
         .then(confirmation => res.json(confirmation))
         .catch(err => res.status(400).json(err))
 }
